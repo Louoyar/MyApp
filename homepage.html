@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        h3 {
+            text-align: center;
+            color: blueviolet;
+        }
+
+        form {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        label {
+            font-weight: 800;
+        }
+
+        /* form div {
+            margin: 1rem;
+        } */
+
+        input[type=submit] {
+            color: white;
+            background-color: brown;
+            border-radius: 1rem;
+            border: 1px solid purple;
+            padding: 0.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>My Form!</h3>
+    <form action="/login" method="POST">
+        <div>
+            <label>Please type your name</label>
+            <input type="text" name="personName" placeholder="Name" required>
+        </div>
+
+        <div>
+            <label>What is your email</label>
+            <input type="email" name="personEmail" placeholder="email" required>
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" name="personPassword">
+        </div>
+
+        <input type="submit" value="Subscribe!">
+    </form>
+</body>
+
+</html>
